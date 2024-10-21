@@ -1,0 +1,55 @@
+.hero {
+    background-color: var(--color-prime-1);
+    color: var(--color-second-white);
+    display: flex;
+    flex-flow: row wrap;
+    height: 26.15rem;
+}
+
+.hero .warper {
+    margin: 0 auto;
+    width: 53.75rem;
+    height: 100%;
+    overflow: visible;
+    display: flex;
+}
+
+.warper .leftContent {
+    padding: 2.5rem 0;
+}
+
+.warper .text {
+    width: 30.5rem;
+    padding-right: 6.38rem;
+}
+
+.hero img {
+    width: 23.25rem;
+    height: 27.88rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+}
+
+.text h1,
+.text h3 {
+    font-family: 'Markazi Text', serif;
+}
+
+.text h1 {
+    font-size: 4rem;
+    line-height: 3.5rem;
+    font-weight: 500;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-top: 0.5rem;
+}
+
+.text h3 {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.text p {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+}
