@@ -1,0 +1,38 @@
+footer, footer section, footer .links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+footer {
+    gap: 3.5rem;
+    padding: 2rem 0;
+}
+footer section {
+    justify-content: flex-start;
+    flex-direction: column;
+    max-width: 10rem;
+}
+footer img {
+    width: 9.4rem;
+    height: 15.8rem;
+}
+footer .links {
+    gap: 5rem;
+}
+footer h5 {
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    font-weight: 800;
+    color: var(--color-prime-1);
+    min-height: 3.75rem;
+}
+footer li {
+    padding-bottom: 0.3rem;
+}
+footer a{
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+footer a:hover {
+    color: var(--color-second-2);
+}

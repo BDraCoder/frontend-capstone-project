@@ -1,0 +1,23 @@
+header {
+    height: 7.5rem;
+}
+header, header ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+header img {
+    width: 13.5rem;
+    height: 4.75rem;
+}
+header ul {
+    gap: 2rem;
+    padding: 0 2rem;
+}
+header a{
+    font-size: 1.5rem;
+}
+header a:hover {
+    color: var(--color-second-2);
+}

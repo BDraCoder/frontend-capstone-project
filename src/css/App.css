@@ -1,0 +1,42 @@
+:root {
+  --color-prime-1:#495E57;
+  --color-prime-2:#F4CE14;
+  --color-second-1:#EE9972;
+  --color-second-2:#FBDABB;
+  --color-second-black:#333333;
+  --color-second-white:#EDEFEE;
+}
+
+*{margin:0;padding:0;text-decoration: none;box-sizing: border-box;}
+
+html, body {
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+a, a:visited{
+  color: black;
+}
+@media only screen and (max-width: 767px) {
+  /* Styles for mobile devices */
+  html{
+    font-size: 8px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Styles for tablets */
+  html{
+    font-size: 12px;
+  }
+}
+@media (min-width: 1025px) {
+  /* Styles for desktops */
+  html{
+    font-size: 16px;
+  }
+}
+
+
