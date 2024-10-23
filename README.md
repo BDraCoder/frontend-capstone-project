@@ -1,5 +1,36 @@
 # Front-end developer capstone project
 
+## Application
+ - UX/UI in design _____________________ x
+ - Creating react app __________________
+ - Using git to manager code ___________
+ - Meta tags and open graph protocol ___
+ - Sematic tags, css ___________________
+ - States, hooks in react ______________
+ - React router ________________________
+ - Form and validation _________________
+ - Fetch and using API _________________ x
+ - Unit testing ________________________ x
+
+## Accessibility
+
+### Using sematic tags
+ - header, main, footer
+ - nav, section, h1-6, p
+### ARIA:
+ - labelledBy for Menu, menu item ____ x
+ - describedby for form ______________ x
+
+## Validation
+### HTML: 
+ - input - range
+### Schema: 
+ - Yup: required
+
+## Testing
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
