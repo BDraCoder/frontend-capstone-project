@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AppButton = ()=>{
+const DisplayBookingDetail = ()=>{
     return (
         <>
         
@@ -8,4 +8,4 @@ const AppButton = ()=>{
     );
 }
 
-export default AppButton;
+export default DisplayBookingDetail;

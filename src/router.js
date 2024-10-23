@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Booking from './pages/Booking';
 import About from './pages/About';
 import App from './App';
+import ConfirmBooking from './pages/ConfirmBooking';
 
 
 function NoMatch() {
@@ -34,6 +35,9 @@ const router = createBrowserRouter([
       }, {
         path: "booking",
         Component: Booking,
+      }, {
+        path: "confirm-booking",
+        Component: ConfirmBooking,
       }, {
         path: "about",
         Component: About,
