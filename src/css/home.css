@@ -1,24 +1,19 @@
-.hero {
+.main-warper{
     background-color: var(--color-prime-1);
     color: var(--color-second-white);
+}
+.hero {
     display: flex;
     flex-flow: row wrap;
     height: 26.15rem;
-}
-
-.hero .warper {
-    margin: 0 auto;
-    width: 53.75rem;
-    height: 100%;
     overflow: visible;
-    display: flex;
 }
 
-.warper .leftContent {
+.hero .leftContent {
     padding: 2.5rem 0;
 }
 
-.warper .text {
+.hero .text {
     width: 30.5rem;
     padding-right: 6.38rem;
 }

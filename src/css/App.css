@@ -21,6 +21,16 @@ li {
 a, a:visited{
   color: black;
 }
+
+main section {
+  margin: 0 auto;
+  width: 53.75rem;
+  height: 100%;
+}
+select:focus{
+  outline: none;
+}
+
 @media only screen and (max-width: 767px) {
   /* Styles for mobile devices */
   html{
