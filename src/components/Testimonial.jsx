@@ -14,7 +14,9 @@ const Testimonial = () => {
     }, []);
     return (
         <VStack justifyContent='center' gap='5rem' width='100%'>
-            <Heading size='4xl' fontFamily='Markazi Text'>Testimonials</Heading>
+            <Heading size='4xl' fontFamily='Markazi Text'
+            describedby="Some reviewer who visited our restaurant"
+            >Testimonials</Heading>
             <HStack gap={5} wrap='wrap' width='100%'>
                 {reviewData ? reviewData.map((guest, index) => (
                     <Card.Root width='12.5rem' height='11.5rem'

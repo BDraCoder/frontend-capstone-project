@@ -8,6 +8,7 @@ import {
 
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
+import { getYesterday } from '../utilities/time';
 
 const formatDate = (date) => date.toLocaleDateString('en-GB').split('/').reverse().join('-');
 
@@ -17,8 +18,9 @@ const FormLabel = ({ text }) => {
 
 const BookingForm = ({ timeSlots, changeDateHandle, onSubmit }) => {
    const today = new Date();
+   const yesterday = getYesterday();
    const validation = Yup.object().shape({
-      date: Yup.date().required('Date is required').min(today, "Choosing a date in the future"),
+      date: Yup.date().required('Date is required').min(yesterday, "Choosing a date in the future"),
       time: Yup.string().required('Required'),
    });
    const formik = useFormik({
@@ -35,7 +37,9 @@ const BookingForm = ({ timeSlots, changeDateHandle, onSubmit }) => {
    });
    return (
       <form style={{ display: 'grid', minWidth: '20rem', gap: '2rem' }}
-         onSubmit={formik.handleSubmit}>
+         onSubmit={formik.handleSubmit}
+          labelledBy="Booking Form" describedby="where you reserve table at our restaurant"
+         >
          <Field label={<FormLabel text='Choose date' />} required
             errorText={formik.errors.date} invalid={!!formik.errors.date}>
             <Input type='date' name='date' size='lg' px={3}
@@ -53,7 +57,7 @@ const BookingForm = ({ timeSlots, changeDateHandle, onSubmit }) => {
                   {...formik.getFieldProps('time')}
                >
                   <option value='' disabled>Pick your reservation time</option>
-                  {timeSlots.map(slot => <option key={slot} value={slot}>{slot}</option>)}
+                  {timeSlots && timeSlots.map(slot => <option key={slot} value={slot}>{slot}</option>)}
                </NativeSelectField>
             </NativeSelectRoot>
          </Field>

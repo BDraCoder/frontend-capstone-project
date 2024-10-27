@@ -3,14 +3,16 @@ import BookingForm from '../components/BookingForm';
 import * as FakeAPI from '../utilities/FakeAPI';
 import { useNavigate } from 'react-router-dom';
 import { Box, Center, Heading, Text } from '@chakra-ui/react';
+import { isInThePast } from '../utilities/time';
 
 const Booking = () => {
-    const today = new Date();
     const initializeTimes = () => {
-        return FakeAPI.getTimeSlots(today);
+        return FakeAPI.getTimeSlots(new Date());
     }
     const updateTimes = (state, action) => {
-        return FakeAPI.getTimeSlots(new Date(action.date));
+        const pickDate = new Date(action.date)
+        if (isInThePast(pickDate)) return null;
+        return FakeAPI.getTimeSlots(pickDate);
     }
     const [availableTimes, dispatch] = useReducer(updateTimes, initializeTimes());
 

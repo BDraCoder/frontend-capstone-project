@@ -18,16 +18,17 @@
  - header, main, footer
  - nav, section, h1-6, p
 ### ARIA:
- - labelledBy for Menu, menu item ____ x
- - describedby for form ______________ x
+ - labelledBy for Menu, menu item ____ components/Header.jsx, components/Header.jsx
+ - describedby for form ______________ components/Header.jsx, components/Header.jsx, components/BookingForm.jsx, components/Testimonial
 
 ## Validation
 ### HTML:
  - input - range
 ### Schema:
- - Yup: required
+ - Yup: required, min (date - you can't book a date in the past)
 
 ## Testing
+ - 
 
 ## Dependencies
 - Formik and Yup for Form and validation
