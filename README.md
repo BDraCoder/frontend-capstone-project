@@ -22,9 +22,9 @@
  - describedby for form ______________ x
 
 ## Validation
-### HTML: 
+### HTML:
  - input - range
-### Schema: 
+### Schema:
  - Yup: required
 
 ## Testing
@@ -33,20 +33,29 @@
 - Formik and Yup for Form and validation
 - react-router-dom
 - react-icons
-- chakra-ui/react, emotion/react for fast css and basic components
+- chakra-ui/react, emotion/react for fast css and basic components<br/>
 See the file package.json for details
 
-# Getting Started
 ## Installation
 This app works with node 21+. First, install node.
-> nvm install 21.0.0
-with this you install the lastest version. Second, check what is installed
-> nvm list
-Third, choose version to use
-> nvm use 21.0.0
-Then install dependencies
-> npm install
-Last is running app
-> npm start
-Run test cases by following command
-> npm test
+> **nvm install 21.0.0**
+>
+> with this you install the lastest version. Second, check what is installed
+>
+> **nvm list**
+>
+> Third, choose version to use
+>
+> **nvm use 21.0.0**
+>
+> Then install dependencies
+>
+> **npm install**
+>
+> Last is running app
+>
+> **npm start**
+>
+> Run test cases by following command
+>
+> **npm test**
