@@ -18,7 +18,6 @@ const Home = () => {
                         <h3>Chicago</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
-                    {/* Button comp */}
                     <Button size="xl" colorPalette='yellow' style={{ padding: '0 2rem', marginTop: '2.7rem' }}
                         onClick={() => navigator('/booking')}>
                         <Text fontWeight='bold' textStyle='lg'>Reserve a table</Text>

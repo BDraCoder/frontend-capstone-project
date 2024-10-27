@@ -40,22 +40,22 @@ See the file package.json for details
 This app works with node 21+. First, install node.
 > **nvm install 21.0.0**
 >
-> with this you install the lastest version. Second, check what is installed
->
+ with this you install the lastest version. Second, check what is installed
+
 > **nvm list**
 >
-> Third, choose version to use
->
+ Third, choose version to use
+
 > **nvm use 21.0.0**
 >
-> Then install dependencies
->
+ Then install dependencies
+
 > **npm install**
 >
-> Last is running app
->
+ Last is running app
+
 > **npm start**
 >
-> Run test cases by following command
->
+ Run test cases by following command
+
 > **npm test**
