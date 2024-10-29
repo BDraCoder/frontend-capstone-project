@@ -1,5 +1,7 @@
 const oneDayInMilliseconds = 86400000;
 
+export const formatDate = (date) => date.toLocaleDateString('en-GB').split('/').reverse().join('-');
+
 export function getYesterday() {
     const today = new Date();
     return new Date(today.getTime() - oneDayInMilliseconds)

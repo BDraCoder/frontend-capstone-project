@@ -1,7 +1,7 @@
 # Front-end developer capstone project
 
 ## Application
- - UX/UI in design
+ - UX/UI in design _____________________ [Figma file](https://www.figma.com/design/AZFV6rg6yijbfhLKYXrm1n/canvas?node-id=409-259&t=L9e0BNnTFWTClYIj-1)
  - Creating react app
  - Using git to manager code
  - Meta tags and open graph protocol ___ index.html

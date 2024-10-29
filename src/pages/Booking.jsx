@@ -11,7 +11,7 @@ const Booking = () => {
     }
     const updateTimes = (state, action) => {
         const pickDate = new Date(action.date)
-        if (isInThePast(pickDate)) return null;
+        if (isInThePast(pickDate)) return [];
         return FakeAPI.getTimeSlots(pickDate);
     }
     const [availableTimes, dispatch] = useReducer(updateTimes, initializeTimes());

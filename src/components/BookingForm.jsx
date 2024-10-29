@@ -1,6 +1,6 @@
 import React from 'react';
 import { Field } from './ui/field';
-import { Button, Input, Text, VStack } from "@chakra-ui/react"
+import { Button, Input, Text } from "@chakra-ui/react"
 import {
    NativeSelectField,
    NativeSelectRoot,
@@ -8,9 +8,7 @@ import {
 
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
-import { getYesterday } from '../utilities/time';
-
-const formatDate = (date) => date.toLocaleDateString('en-GB').split('/').reverse().join('-');
+import { getYesterday, formatDate } from '../utilities/time';
 
 const FormLabel = ({ text }) => {
    return <Text fontSize='1rem'>{text}</Text>
@@ -40,6 +38,7 @@ const BookingForm = ({ timeSlots, changeDateHandle, onSubmit }) => {
          onSubmit={formik.handleSubmit}
           labelledBy="Booking Form" describedby="where you reserve table at our restaurant"
          >
+            <div>Fill follow informations</div>
          <Field label={<FormLabel text='Choose date' />} required
             errorText={formik.errors.date} invalid={!!formik.errors.date}>
             <Input type='date' name='date' size='lg' px={3}
